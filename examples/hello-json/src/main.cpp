@@ -11,8 +11,8 @@ using json = nlohmann::json;
 int main()
 {
     // Sample part 1
-    std::ifstream fileStream("hello.json");
-    auto hello_json = json::parse(fileStream);
+    std::ifstream hello_file("hello.json");
+    auto hello_json = json::parse(hello_file);
 
     std::cout << hello_json["mainMessage"].get<std::string_view>() << '\n';
     std::cout << "Here are some places you might know:\n";

@@ -1,6 +1,7 @@
 .vs/
 .idea/
 out/
+build/
 cmake-build-debug/
 packages/
 conan.lock
