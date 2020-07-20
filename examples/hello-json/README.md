@@ -20,15 +20,13 @@ To run the project:
     * Use CLion from JetBrains.
         * Make sure that it detects Visual Studio or another supported compiler on your system.
     * Click the Run button to run the project.
-* The command line way (on Windows with Visual Studio 2019 installed with all related C/C++ and CMake options)
-    * Run the **Developer Command Prompt for VS 2019** (usually found in the Start Menu).
-        * OR open a command prompt in your folder and run ``"%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"``
-    * Then ``mkdir build``, which is our target directory for the VS solution and build outputs.
-    * Then ``cmake . -B build`` which creates a Visual Studio solution by default.
-    * Then ``msbuild build\hello_json.sln`` to compile the project.
-        * OR just open build\hello_json.sln in Visual Studio.
+* The command line way:
+    * From the source directory type ``mkdir build``, which is our target directory for the build outputs.
+    * Then ``cmake . -B build`` which creates platform specific project file by default.
+    * Then ``cmake --build build`` to compile the project.
     * Finally use ``build\bin\hello_json.exe`` to run the program.
         * You can use ``cat someone.json`` to see the example file it generated, besides the command line output.
+    * If you are on Windows and have Visual Studio, it is best to run the **Developer Command Prompt for VS 2019** (usually found in the Start Menu).
 
 ## Example Overview
 The **conanfile.py** defines all of the dependencies and copies the source files to the _packages_ directory.
