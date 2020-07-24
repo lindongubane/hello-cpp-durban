@@ -7,7 +7,7 @@ include(conanbuildinfo.cmake)
 conan_basic_setup()
 
 include_directories(src)
-include_directories(packages/include)
+include_directories(${CONAN_INCLUDE_DIRS})
 
 file(GLOB SRC_FILES src/*.cpp)
 file(GLOB JSON_FILES src/*.json)
@@ -20,4 +20,4 @@ add_custom_command(TARGET hello_json
         COMMAND ${CMAKE_COMMAND} -E copy ${JSON_FILES} ${CMAKE_BINARY_DIR}/bin
         )
 
-target_link_libraries(hello_json ${CONAN_LIBS})
+conan_target_link_libraries(hello_json)
