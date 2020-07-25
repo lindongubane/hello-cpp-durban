@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(hello_json)
+project(hello-json)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -12,12 +12,12 @@ include_directories(${CONAN_INCLUDE_DIRS})
 file(GLOB SRC_FILES src/*.cpp)
 file(GLOB JSON_FILES src/*.json)
 
-add_executable(hello_json
+add_executable(hello-json
         ${SRC_FILES})
 
-add_custom_command(TARGET hello_json
+add_custom_command(TARGET hello-json
         POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy ${JSON_FILES} ${CMAKE_BINARY_DIR}/bin
         )
 
-conan_target_link_libraries(hello_json)
+conan_target_link_libraries(hello-json)

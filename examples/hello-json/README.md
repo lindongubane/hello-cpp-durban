@@ -22,7 +22,7 @@ To run the project:
     * Click the Run button to run the project.
 * The command line way:
     * ``conan build .``
-    * Finally use ``build\bin\hello_json.exe`` to run the program.
+    * Finally use ``build\bin\hello-json.exe`` to run the program.
         * You can use ``cat someone.json`` to see the example file it generated, besides the command line output.
     * If you are on Windows and have Visual Studio, it is best to run the **Developer Command Prompt for VS 2019** (usually found in the Start Menu).
         * There is also **vswhere** which can be installed via Choco. Then you can make a bat/ps1 file to open the VS command line: https://github.com/microsoft/vswhere/wiki/Start-Developer-Command-Prompt
