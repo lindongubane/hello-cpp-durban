@@ -1,0 +1,14 @@
+.vs/
+.idea/
+out/
+build/
+cmake-build-debug/
+packages/
+conan.lock
+conan_imports_manifest.txt
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
+cmake_install.cmake
+someone.json
