@@ -11,7 +11,6 @@ namespace fs = std::filesystem;
 // For more information about nlohmann json, go to https://github.com/nlohmann/json or https://nlohmann.github.io/json/.
 using json = nlohmann::json;
 
-
 std::optional<fs::path> json_file_exists(std::string_view exe_path, std::string_view json_file)
 {
     // If you run the program with an absolute path, or if you run it from inside its directory,
@@ -32,7 +31,6 @@ std::optional<fs::path> json_file_exists(std::string_view exe_path, std::string_
 
     return std::nullopt;
 }
-
 
 int main(int argc, const char** argv)
 {
