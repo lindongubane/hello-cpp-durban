@@ -5,7 +5,7 @@ This is an example for how to do some basic parsing with JSON in C++.
 ## Setup Instructions
 The example requires the Conan package manager and CMake.
 
-If you have Python installed on your system you can do something the effect of:
+Python is required by Conan, and if it is installed on your system you can do something the effect of:
 
 ``pip install conan``
 
@@ -13,19 +13,14 @@ Once that is done, you can run the following command inside of the project direc
 
 ``conan install .``
 
-To run the project:
+To bulid the project from the command line, use:
 
-(Currently only tested on Windows, but should be similar on Linux)
-* The easy way:
-    * Use CLion from JetBrains.
-        * Make sure that it detects Visual Studio or another supported compiler on your system.
-    * Click the Run button to run the project.
-* The command line way:
-    * ``conan build .``
-    * Finally use ``build\bin\hello-json.exe`` to run the program.
-        * You can use ``cat someone.json`` to see the example file it generated, besides the command line output.
-    * If you are on Windows and have Visual Studio, it is best to run the **Developer Command Prompt for VS 2019** (usually found in the Start Menu).
-        * There is also **vswhere** which can be installed via Choco. Then you can make a bat/ps1 file to open the VS command line: https://github.com/microsoft/vswhere/wiki/Start-Developer-Command-Prompt
+``conan build .``
+
+Finally use ``build\bin\hello-json.exe`` to run the program.
+
+You can also use your favourite IDE, like Visual Studio or CLion, after doing the ``conan install .`` step.
+
 
 ## Example Overview
 The **conanfile.py** defines all of the dependencies and copies the source files to the _packages_ directory.
