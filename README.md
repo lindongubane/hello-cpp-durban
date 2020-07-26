@@ -1,4 +1,8 @@
 # Hello C++ Durban
 Hello C++ Durban is a set of code samples for learning purposes made by members of the C++ Durban community.
 
-The first example is Hello JSON which is in the __examples/hello-json__ folder.
+The two examples are:
+* Hello JSON (examples/hello-json)
+* Hello TOML (examples/hello-toml)
+
+Go into the directory of each to find the readme describing how they work.
