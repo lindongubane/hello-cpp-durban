@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
                         }
                 };
 
-        res->writeHeader("Content-Type", "application-json; charset=utf-8");
+        res->writeHeader("Content-Type", "application/json; charset=utf-8");
         res->end(people.dump());
     });
 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
         {
             auto packedData = json::to_msgpack(mechs);
             auto packedView = std::string_view(reinterpret_cast<std::string_view::pointer>(packedData.data()), packedData.size());
-            res->writeHeader("Content-Type", "application/msgpack; charset=utf-8");
+            res->writeHeader("Content-Type", "application/msgpack");
             res->end(packedView);
         }
         else
