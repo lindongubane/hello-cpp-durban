@@ -9,10 +9,6 @@ Python is required by Conan, and if it is installed on your system you can do so
 
 ``pip install conan``
 
-As a setup command, run ```conan install cmake/3.17.3@/ -g virtualenv```
-
-Then run ```activate``` or ```./activate```
-
 Once that is done, you can run the following command inside of the project directory.
 
 ``conan install .``
