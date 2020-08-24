@@ -21,3 +21,10 @@ add_custom_command(TARGET hello-json
         )
 
 conan_target_link_libraries(hello-json)
+
+
+if(MSVC)
+    target_compile_options(hello-json PRIVATE /W4 /WX $<$<CONFIG:RELEASE>:/O2>)
+else()
+    target_compile_options(hello-json PRIVATE -Wall -Wextra -Werror -pedantic $<$<CONFIG:RELEASE>:-O3>)
+endif()

@@ -3,9 +3,9 @@
 
 using json = nlohmann::json;
 
-int main(int argc, char *argv[]) {
+int main() {
     auto app = uWS::App();
-    app.get("/people", [](auto* res, auto* req)
+    app.get("/people", [](auto* res, auto*)
     {
         const static auto people = json
                 {
@@ -60,7 +60,6 @@ int main(int argc, char *argv[]) {
             res->end(mechs.dump());
         }
     });
-
 
     app.listen(3000, [](auto* token)
     {
