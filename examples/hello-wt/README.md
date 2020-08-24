@@ -17,7 +17,7 @@ To build the project from the command line, use:
 
 ``conan build .``
 
-Finally use ``build\bin\hello-wt`` to run the program.
+Finally use ``build\bin\hello-wt --http-address=0.0.0.0 --http-port=8080 --deploy-path=/hello --docroot=. --config ./wt_config.xml`` to run the program.
 
 You can also use your favourite IDE, like Visual Studio or CLion, after doing the ``conan install .`` step.
 
