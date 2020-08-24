@@ -1,6 +1,6 @@
-# Hello wt
+# Hello Wt
 
-This is an example of a wt web GUI application.
+This is an example of a Wt web GUI application.
 
 ## Setup Instructions
 The example requires the Conan package manager.
