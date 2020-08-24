@@ -32,7 +32,7 @@ std::optional<fs::path> json_file_exists(std::string_view exe_path, std::string_
     return std::nullopt;
 }
 
-int main(int argc, const char** argv)
+int main(int, const char** argv)
 {
     // Sample part 1
     if (auto path = json_file_exists(argv[0], "hello.json"); path.has_value())

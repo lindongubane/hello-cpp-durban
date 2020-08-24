@@ -1,9 +1,10 @@
 from conans import ConanFile, CMake, tools
+import os.path
 
 
-class HelloJsonConanFile(ConanFile):
+class HelloTomlConanFile(ConanFile):
     build_requires = "cmake/3.17.3"
-    requires = "nlohmann_json/3.8.0"
+    requires = "wt/4.4.0"
     settings = "arch", "build_type", "compiler"
     generators = "cmake"
     build_folder = "build"
@@ -14,3 +15,5 @@ class HelloJsonConanFile(ConanFile):
         cmake.configure()
         cmake.build()
 
+    def imports(self):
+        self.copy("Wt/resources/*", src="@bindirs", dst="")

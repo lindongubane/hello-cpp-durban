@@ -21,3 +21,10 @@ add_custom_command(TARGET hello-toml
         )
 
 conan_target_link_libraries(hello-toml)
+
+
+if(MSVC)
+    target_compile_options(hello-toml PRIVATE /W4 /WX $<$<CONFIG:RELEASE>:/O2>)
+else()
+    target_compile_options(hello-toml PRIVATE -Wall -Wextra -Werror -pedantic $<$<CONFIG:RELEASE>:-O3>)
+endif()
