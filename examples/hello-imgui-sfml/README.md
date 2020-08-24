@@ -1,6 +1,6 @@
-# Hello wxWidgets
+# Hello imGUI + SFML
 
-This is an example of a wxWidgets GUI application.
+This is an example of a imGUI + SFML GUI application.
 
 ## Setup Instructions
 The example requires the Conan package manager.
@@ -21,7 +21,7 @@ To build the project from the command line, use:
 
 ``conan build .``
 
-Finally use ``build\bin\hello-wx-widgets`` to run the program.
+Finally use ``build\bin\hello-imgui-sfml`` to run the program.
 
 You can also use your favourite IDE, like Visual Studio or CLion, after doing the ``conan install .`` step.
 

@@ -1,6 +1,6 @@
-# Hello wxWidgets
+# Hello wt
 
-This is an example of a wxWidgets GUI application.
+This is an example of a wt web GUI application.
 
 ## Setup Instructions
 The example requires the Conan package manager.
@@ -8,10 +8,6 @@ The example requires the Conan package manager.
 Python is required by Conan, and if it is installed on your system you can do something the effect of:
 
 ``pip install conan``
-
-As a setup command, run ```conan install cmake/3.17.3@/ -g virtualenv```
-
-Then run ```activate``` or ```./activate```
 
 Once that is done, you can run the following command inside of the project directory.
 
@@ -21,7 +17,7 @@ To build the project from the command line, use:
 
 ``conan build .``
 
-Finally use ``build\bin\hello-wx-widgets`` to run the program.
+Finally use ``build\bin\hello-wt`` to run the program.
 
 You can also use your favourite IDE, like Visual Studio or CLion, after doing the ``conan install .`` step.
 
