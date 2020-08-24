@@ -1,6 +1,6 @@
-# Hello imGUI + SFML
+# Hello ImGui + SFML
 
-This is an example of a imGUI + SFML GUI application.
+This is an example of a ImGui + SFML GUI application.
 
 ## Setup Instructions
 The example requires the Conan package manager.
