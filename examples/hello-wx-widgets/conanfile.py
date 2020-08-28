@@ -1,11 +1,11 @@
 from conans import ConanFile, CMake, tools
 
 
-class HelloJsonConanFile(ConanFile):
+class HelloTomlConanFile(ConanFile):
     build_requires = "cmake/3.17.3"
-    requires = "nlohmann_json/3.8.0"
+    requires = "wxwidgets/3.1.3@bincrafters/stable"
     settings = "arch", "build_type", "compiler"
-    generators = "cmake"
+    generators = "cmake", "virtualenv"
     build_folder = "build"
         
     def build(self):

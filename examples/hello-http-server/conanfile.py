@@ -1,9 +1,9 @@
 from conans import ConanFile, CMake, tools
 
 
-class HelloJsonConanFile(ConanFile):
+class HelloTomlConanFile(ConanFile):
     build_requires = "cmake/3.17.3"
-    requires = "nlohmann_json/3.8.0"
+    requires = "uwebsockets/18.3.0", "nlohmann_json/3.9.1"
     settings = "arch", "build_type", "compiler"
     generators = "cmake"
     build_folder = "build"
