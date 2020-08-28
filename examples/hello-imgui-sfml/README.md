@@ -9,6 +9,10 @@ Python is required by Conan, and if it is installed on your system you can do so
 
 ``pip install conan``
 
+For this project, you also need to add the Bincrafters Conan remote, with this command:
+
+``conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan``
+
 Once that is done, you can run the following command inside of the project directory.
 
 ``conan install .``
