@@ -21,7 +21,7 @@ To build the project from the command line, use:
 
 ``conan build .``
 
-Finally use ``build\bin\hello-imgui-sfml`` to run the program.
+Finally use ``build/bin/hello-imgui-sfml`` to run the program.
 
 You can also use your favourite IDE, like Visual Studio or CLion, after doing the ``conan install .`` step.
 
