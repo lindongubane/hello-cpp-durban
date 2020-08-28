@@ -23,8 +23,9 @@ int main(int argc, char **argv)
         auto* root = app->root();
 
         auto* panel = root->addNew<Wt::WContainerWidget>();
-
         panel->setStyleClass("col-md-6 col-md-offset-3");
+
+        panel->addNew<Wt::WBreak>();
 
         auto* buttonGroup = panel->addNew<Wt::WContainerWidget>();
         buttonGroup->setStyleClass("input-group");
@@ -39,12 +40,16 @@ int main(int argc, char **argv)
 
         auto button = addon->addNew<Wt::WPushButton>("Add");
 
+        panel->addNew<Wt::WBreak>();
+
         auto* items = panel->addNew<Wt::WGroupBox>("To-do list");
+
+        items->setStyleClass("list-group");
 
         const auto greet = [=] ()
         {
-            items->addNew<Wt::WText>(nameEdit->text());
-            items->addNew<Wt::WBreak>();
+            auto* item = items->addNew<Wt::WText>(nameEdit->text());
+            item->setStyleClass("list-group-item");
             nameEdit->setText("");
         };
 
