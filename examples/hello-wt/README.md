@@ -9,7 +9,7 @@ Python is required by Conan, and if it is installed on your system you can do so
 
 ``pip install conan``
 
-Once that is done, you can run the following command inside of the project directory.
+Once that is done, you can run the following command inside of the project directory:
 
 ```conan install .``` or ```conan install . --build=missing```
 
