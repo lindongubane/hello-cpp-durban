@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 import os.path
 
 
-class HelloTomlConanFile(ConanFile):
+class HelloImguiSfmlConanFile(ConanFile):
     build_requires = "cmake/3.17.3"
     requires = "imgui-sfml/2.1@bincrafters/stable"
     settings = "arch", "build_type", "compiler"
