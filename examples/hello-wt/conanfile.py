@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 import os.path
 
 
-class HelloTomlConanFile(ConanFile):
+class HelloWtConanFile(ConanFile):
     build_requires = "cmake/3.17.3"
     requires = "wt/4.4.0"
     settings = "arch", "build_type", "compiler"

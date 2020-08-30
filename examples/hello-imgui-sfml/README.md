@@ -11,11 +11,15 @@ Python is required by Conan, and if it is installed on your system you can do so
 
 For this project, you also need to add the Bincrafters Conan remote, with this command:
 
-``conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan``
+```conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan```
 
-Once that is done, you can run the following command inside of the project directory.
+As a setup command, run ```conan install cmake/3.17.3@/ -g virtualenv```
 
-``conan install .``
+Then run ```activate``` or ```./activate```
+
+Once that is done, you can run the following command inside of the project directory:
+
+```conan install .``` or ```conan install . --build=missing```
 
 To build the project from the command line, use:
 
