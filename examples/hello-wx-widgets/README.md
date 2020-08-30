@@ -17,7 +17,7 @@ As a setup command, run ```conan install cmake/3.17.3@/ -g virtualenv```
 
 Then run ```activate``` or ```./activate```
 
-Once that is done, you can run the following command inside of the project directory.
+Once that is done, you can run the following command inside of the project directory:
 
 ```conan install .``` or ```conan install . --build=missing```
 
