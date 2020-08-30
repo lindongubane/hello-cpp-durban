@@ -13,3 +13,10 @@ The two examples are:
   * Hello Wt: [examples/hello-wt](examples/hello-wt)
 
 Go into the directory of each to find the readme describing how they work.
+
+## Setup
+To compile and run each example, you will need Python installed as well as a C++ compiler.
+
+* For Windows:
+    * Chocolately is the easiest way to get started: https://chocolatey.org/install
+    * With Chocolatey installed, run the following in an admin shell: ```choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --passive"```
