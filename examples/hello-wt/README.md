@@ -11,7 +11,7 @@ Python is required by Conan, and if it is installed on your system you can do so
 
 Once that is done, you can run the following command inside of the project directory.
 
-``conan install .``
+```conan install .``` or ```conan install . --build=missing```
 
 To build the project from the command line, use:
 
